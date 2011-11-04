@@ -1,3 +1,9 @@
+# revision 17256
+# category Package
+# catalog-ctan /macros/latex/contrib/multirow
+# catalog-date 2010-02-27 22:08:17 +0100
+# catalog-license lppl1
+# catalog-version 1.6
 Name:		texlive-multirow
 Version:	1.6
 Release:	1
@@ -44,6 +50,7 @@ which can be used to advantage with \multirow cells.
 %doc %{_texmfdistdir}/doc/latex/multirow/miscdoc.sty
 %doc %{_texmfdistdir}/doc/latex/multirow/multirow.pdf
 %doc %{_texmfdistdir}/doc/latex/multirow/multirow.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +61,5 @@ which can be used to advantage with \multirow cells.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
