@@ -1,12 +1,6 @@
-# revision 17256
-# category Package
-# catalog-ctan /macros/latex/contrib/multirow
-# catalog-date 2010-02-27 22:08:17 +0100
-# catalog-license lppl1
-# catalog-version 1.6
 Name:		texlive-multirow
-Version:	1.6
-Release:	10
+Version:	2.2
+Release:	1
 Summary:	Create tabular cells spanning multiple rows
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/multirow
@@ -34,13 +28,8 @@ which can be used to advantage with \multirow cells.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/multirow/bigdelim.sty
-%{_texmfdistdir}/tex/latex/multirow/bigstrut.sty
-%{_texmfdistdir}/tex/latex/multirow/multirow.sty
-%doc %{_texmfdistdir}/doc/latex/multirow/README
-%doc %{_texmfdistdir}/doc/latex/multirow/miscdoc.sty
-%doc %{_texmfdistdir}/doc/latex/multirow/multirow.pdf
-%doc %{_texmfdistdir}/doc/latex/multirow/multirow.tex
+%{_texmfdistdir}/tex/latex/multirow
+%doc %{_texmfdistdir}/doc/latex/multirow
 
 #-----------------------------------------------------------------------
 %prep
@@ -51,17 +40,3 @@ which can be used to advantage with \multirow cells.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6-2
-+ Revision: 754233
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.6-1
-+ Revision: 719087
-- texlive-multirow
-- texlive-multirow
-- texlive-multirow
-- texlive-multirow
-
