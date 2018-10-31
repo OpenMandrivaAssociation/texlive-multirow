@@ -1,6 +1,6 @@
 Name:		texlive-multirow
 Version:	2.3
-Release:	1
+Release:	2
 Summary:	Create tabular cells spanning multiple rows
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/multirow
