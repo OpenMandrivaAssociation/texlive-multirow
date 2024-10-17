@@ -3,7 +3,7 @@ Version:	58396
 Release:	2
 Summary:	Create tabular cells spanning multiple rows
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/multirow
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/multirow
 License:	LPPL1
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/multirow.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/multirow.doc.r%{version}.tar.xz
